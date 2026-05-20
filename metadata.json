@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Pelayanan UPTD Dukcapil",
+  "description": "Sistem Administrasi dan Pelayanan Dokumen Kependudukan UPTD Dukcapil Kecamatan Makarti Jaya",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

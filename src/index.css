@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Printable page settings for F4 (215mm x 330mm) strictly */
+  @page {
+    size: 215mm 330mm portrait;
+    margin: 1.5cm 1.5cm 1.5cm 1.5cm;
+  }
+
+  @media print {
+    /* Hide all layout controls and side menus */
+    html, body {
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      font-size: 11pt !important;
+      line-height: 1.4 !important;
+    }
+
+    aside,
+    header,
+    button,
+    input,
+    select,
+    textarea,
+    nav,
+    .print\:hidden,
+    .no-print {
+      display: none !important;
+    }
+
+    /* Reset layout, flex, heights and scroll containers for high fidelity multi-page printing */
+    #root,
+    main,
+    #view-app,
+    #mainScrollArea,
+    #sec-laporan-harian,
+    #sec-recap-skp,
+    #sec-laporan-perekaman,
+    #sec-view-laporan-sheet,
+    #sec-recap,
+    #recapPreviewArea {
+      display: block !important;
+      background: white !important;
+      background-color: white !important;
+      color: black !important;
+      width: 100% !important;
+      min-width: 100% !important;
+      height: auto !important;
+      overflow: visible !important;
+      position: static !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+    }
+
+    .bg-white,
+    .bg-slate-50,
+    .bg-slate-100 {
+      background-color: #ffffff !important;
+      background: #ffffff !important;
+      border-color: #000000 !important;
+      box-shadow: none !important;
+    }
+
+    /* Force tables to show borders in black during print */
+    table {
+      border-collapse: collapse !important;
+      width: 100% !important;
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+      color: #000000 !important;
+      border-color: #000000 !important;
+    }
+
+    th, td {
+      border: 1px solid #000000 !important;
+      padding: 6px 8px !important;
+      color: #000000 !important;
+      background-color: transparent !important;
+    }
+
+    /* Clean spacing for official signing headers */
+    .border-b-2, .border-b-4 {
+      border-color: #000000 !important;
+    }
+
+    h1, h2, h3, h4, p, span, td, th {
+      color: #000000 !important;
+    }
+  }
+}
