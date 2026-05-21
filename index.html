@@ -6,9 +6,9 @@
     <title>UPT Disdukcapil Makarti Jaya</title>
 
     <!-- Icon dan PWA -->
-    <!-- PERBAIKAN: Menggunakan link gambar langsung (Direct Link) dari Google Drive -->
-    <link rel="icon" href="[https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM](https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM)" />
-    <link rel="apple-touch-icon" href="[https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM](https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM)" />
+    <!-- PERBAIKAN: Format link telah dibersihkan dari tanda kurung siku [] -->
+    <link rel="icon" href="https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM" />
+    <link rel="apple-touch-icon" href="https://drive.google.com/uc?export=view&id=19ZupZLIB549SJYxDPVeDw2FkZ7d4KHsM" />
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1976d2">
 
@@ -38,9 +38,10 @@
 </head>
 <body>
     <div class="iframe-container">
+        <!-- PERBAIKAN: Link src iframe sudah menggunakan URL murni -->
         <iframe
             id="app"
-            src="[https://script.google.com/macros/s/AKfycbzaA0aHneHa_vjj3Rmv6aWmNLw3Ab8KBI3fDaQdfhCmkQdBgLIQCBPBmQovAu1Z036q/exec](https://script.google.com/macros/s/AKfycbzaA0aHneHa_vjj3Rmv6aWmNLw3Ab8KBI3fDaQdfhCmkQdBgLIQCBPBmQovAu1Z036q/exec)"
+            src="https://script.google.com/macros/s/AKfycbzaA0aHneHa_vjj3Rmv6aWmNLw3Ab8KBI3fDaQdfhCmkQdBgLIQCBPBmQovAu1Z036q/exec"
             scrolling="yes"
             allowfullscreen="true"
             webkitallowfullscreen="true"
@@ -49,7 +50,6 @@
         </iframe>
     </div>
 
-    <!-- TAMBAHAN: Script untuk mendaftarkan Service Worker -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
